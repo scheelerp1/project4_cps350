@@ -1,0 +1,29 @@
+package project4;
+
+public class DirectedEdge {
+
+	Node start;			//start node
+	Node end;			//end node
+	double weight;
+	
+	DirectedEdge()
+	{
+		start=null;
+		end=null;
+		weight=0;
+	}
+	
+	DirectedEdge(double w)
+	{
+		start=null;
+		end=null;
+		weight=w;
+	}
+	
+	DirectedEdge(Node A, Node B, double w)
+	{
+		start = A;
+		end = B;
+		weight=w;
+	}
+}
