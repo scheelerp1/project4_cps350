@@ -2,28 +2,23 @@ package project4;
 
 public class DirectedEdge {
 
-	Node start;			//start node
-	Node end;			//end node
+	int start;			//start node
+	int end;			//end node
 	double weight;
+	final int EMPTY = -1;
 	
 	DirectedEdge()
 	{
-		start=null;
-		end=null;
-		weight=0;
+		this.start = EMPTY;
+		this.end = EMPTY;
+		this.weight = EMPTY;
 	}
 	
-	DirectedEdge(double w)
+	DirectedEdge(int start, int end, double weight)
 	{
-		start=null;
-		end=null;
-		weight=w;
+		this.start = start;
+		this.end = end;
+		this.weight = weight;
 	}
 	
-	DirectedEdge(Node A, Node B, double w)
-	{
-		start = A;
-		end = B;
-		weight=w;
-	}
 }
