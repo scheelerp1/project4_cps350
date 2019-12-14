@@ -39,15 +39,10 @@ public class MinHeap {
 			else
 				i=0;
 		}
-		
-		heapify(this.heap);
+
 	}
 	
-	//if you're smaller than your parent, swap places
-	void heapify(DirectedEdge[] heap)
-	{
-		
-	}
+
 	
 	DirectedEdge dequeue()
 	{
